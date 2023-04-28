@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+    font-size: 16px;
+
+}
+.home{
+    height: auto;
+    width: 100%;
+    background: hsl(256, 26%, 20%);
+    position: relative;
+    margin-bottom: 14em;
+    padding-bottom: 50px;
+    
+    .navBar{
+        width: 100%;
+        background: hsl(0, 0%, 98%);
+        .nav{
+            width: 80%;
+            margin: auto ;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            
+            .closeNav{
+                display: none;
+                cursor: pointer;
+            }
+            
+    
+            nav{
+                ul{
+                    display: flex;
+                    li{
+                        list-style: none;
+                        padding: 5px 10px;
+                        
+                        a{
+                            text-decoration: none;
+                            color: hsl(256, 26%, 20%);
+                            font-weight: 400;
+                        }
+                        a:hover{
+                            font-weight: 600;
+                        }
+                    }
+                    .view{
+                        background: transparent;
+                        padding: 5px 20px;
+                        border: 2px solid hsl(256, 26%, 20%);
+                        transition: all 0.5s;
+                        font-weight: 600;
+                    }
+                    .view:hover{
+                        background: hsl(256, 26%, 20%);
+                        color: hsl(0, 0%, 98%);
+                    }
+                }
+                
+            }
+        
+    }
+
+    
+       
+    }
+    main{
+        width: 80%;
+        margin: auto;
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        hr{
+            width: 100px;
+            background: hsl(0, 0%, 98%);
+            margin: 20px;
+            margin-left: 0;
+            outline: none;
+        }
+        
+        header{
+            margin-bottom: 15px;
+            width: 450px;
+            text-align: left;
+
+            h1{
+                font-weight: 600;
+                color: hsl(0, 0%, 98%);
+                font-size: 3em;
+            }
+            p{
+                font-size: 18px;
+                padding: 20px 0;
+                color: hsl(0, 0%, 98%);
+                font-weight: 400;
+            }
+            .view{
+                background: transparent;
+                padding: 5px 20px;
+                border: 2px solid hsl(0, 0%, 98%);
+                transition: all 0.5s;
+                font-weight: 600;
+                color: hsl(0, 0%, 98%);
+                text-decoration: none;
+
+            }
+            .view:hover{
+                background: hsl(0, 0%, 98%);
+                color: hsl(256, 26%, 20%);
+            }
+
+        }
+
+        img{
+           margin-bottom: -18%;
+           width: 370px;
+        }
+    }
+}
+.about{
+    width: 80%;
+    margin:10px auto;
+    hr{
+        width: 100px;
+        background: hsl(256, 26%, 20%);
+        margin: 20px;
+        height: 3px;
+        outline: none; 
+    }
+    h1{
+        font-weight: 600;
+        color: hsl(256, 26%, 20%);
+        font-size: 4em;
+    }
+    .items{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        .item{
+            max-width: 270px;
+            padding: 12px 10px;
+            text-align: left;
+            color: hsl(256, 26%, 20%);
+            h3{
+                font-weight: 700;
+                margin: 10px 0;
+            }
+        }
+    }
+}
+.work{
+    width: 80%;
+    background: hsl(256, 26%, 20%);
+    margin: 2em auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4em 2em;
+    h1{
+        font-size: 2em;
+        text-align: left;
+        font-weight: 700;
+        color: hsl(0, 0%, 98%);
+    }
+    a{
+        background: transparent;
+        padding: 5px 20px;
+        border: 2px solid hsl(0, 0%, 98%);
+        transition: all 0.5s;
+        font-weight: 600;
+        color: hsl(0, 0%, 98%);
+        text-decoration: none;
+
+    }
+    a:hover{
+        background: hsl(0, 0%, 98%);
+        color: hsl(256, 26%, 20%);
+    }
+}
+footer{
+    background: hsl(0, 0%, 98%);
+    padding: 2em 0;
+    .content{
+        width: 80%;
+        margin: auto;
+        .link{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2em 0;
+            margin-bottom: 1em;
+            border-bottom: 1px solid hsl(273, 4%, 51%);
+            .links{
+                img{
+                    margin-right: .5em;
+                    color: hsl(256, 26%, 20%);
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+    .blogs{
+        display: flex;
+        justify-content: space-between;
+        .blog{
+            color: hsl(256, 26%, 20%);
+            .head{
+                color: hsl(273, 4%, 51%);
+                margin-bottom: 2em;
+            }
+            p{
+                padding: 5px 0;
+            }
+            a{
+                color: hsl(256, 26%, 20%);
+                text-decoration: none;
+                transition: all 0.5s;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+@media screen and (max-width: 835px){
+    main{
+        header{
+            h1{
+                font-size: 2em;
+            }
+        }
+    }
+}
+@media screen and (min-width: 641px){
+    .openNav{
+        display: none;
+       
+    }
+}
+@media screen and (max-width: 640px) {
+    .home{
+        margin-bottom: 5em;
+        .nav{
+            .openNav{
+                display: flex;
+            }
+            .openNav.add{
+                display: none;
+            }
+            
+            .closeNav.close{
+                display: block;
+            }
+            nav{
+                
+                position: absolute;
+                background: hsl(216, 30%, 68%);
+                height: 100vh;
+                width: 100%;
+                top: -100vh;
+                left: 0;
+                text-align: center;
+                z-index: 1;
+                transition: all 0.5s ease;
+                padding-top: 20px;
+        
+                ul{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    li{
+                        margin-top: 10px;
+                    }
+                    
+                }
+            }
+            nav.active{
+                top: 7%;
+            }
+            
+        }
+        
+        main{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            padding-top: 0;
+    
+            header{
+                text-align: center;
+                width: 340px;
+                margin:20px auto;
+                hr{
+                    display: none;
+                }
+                h1{
+                    font-size: 2.9em;
+                }
+            
+            }
+            img{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .about{
+        text-align: center;
+        width: 100%;
+        hr{
+            margin-left: 40%;
+        }
+        h1{
+            font-size: 2.9em;
+        }
+        .items{
+            width: 100%;
+            flex-direction: column;
+            .item{
+                text-align: center;
+                margin: auto;
+            }
+        }
+    }
+    .work{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        h1{
+            font-size: 1.5em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+    footer{
+        .content{
+            text-align: center;
+            width: 100%;
+            .link{
+                display: flex;
+                flex-direction: column;
+                .links{
+                    margin-top: 2em;
+                }
+            }
+            .blogs{
+                display: flex;
+                flex-direction: column;
+                .blog{
+                    margin-top: 1em;
+                }
+            }
+        }
+    }
+    
+    
+}

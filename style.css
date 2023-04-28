@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: o;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.home {
+  height: auto;
+  width: 100%;
+  background: hsl(256deg, 26%, 20%);
+  position: relative;
+  margin-bottom: 14em;
+  padding-bottom: 50px;
+}
+.home .navBar {
+  width: 100%;
+  background: hsl(0deg, 0%, 98%);
+}
+.home .navBar .nav {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home .navBar .nav .closeNav {
+  display: none;
+  cursor: pointer;
+}
+.home .navBar .nav nav ul {
+  display: flex;
+}
+.home .navBar .nav nav ul li {
+  list-style: none;
+  padding: 5px 10px;
+}
+.home .navBar .nav nav ul li a {
+  text-decoration: none;
+  color: hsl(256deg, 26%, 20%);
+  font-weight: 400;
+}
+.home .navBar .nav nav ul li a:hover {
+  font-weight: 600;
+}
+.home .navBar .nav nav ul .view {
+  background: transparent;
+  padding: 5px 20px;
+  border: 2px solid hsl(256deg, 26%, 20%);
+  transition: all 0.5s;
+  font-weight: 600;
+}
+.home .navBar .nav nav ul .view:hover {
+  background: hsl(256deg, 26%, 20%);
+  color: hsl(0deg, 0%, 98%);
+}
+.home main {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home main hr {
+  width: 100px;
+  background: hsl(0deg, 0%, 98%);
+  margin: 20px;
+  margin-left: 0;
+  outline: none;
+}
+.home main header {
+  margin-bottom: 15px;
+  width: 450px;
+  text-align: left;
+}
+.home main header h1 {
+  font-weight: 600;
+  color: hsl(0deg, 0%, 98%);
+  font-size: 3em;
+}
+.home main header p {
+  font-size: 18px;
+  padding: 20px 0;
+  color: hsl(0deg, 0%, 98%);
+  font-weight: 400;
+}
+.home main header .view {
+  background: transparent;
+  padding: 5px 20px;
+  border: 2px solid hsl(0deg, 0%, 98%);
+  transition: all 0.5s;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 98%);
+  text-decoration: none;
+}
+.home main header .view:hover {
+  background: hsl(0deg, 0%, 98%);
+  color: hsl(256deg, 26%, 20%);
+}
+.home main img {
+  margin-bottom: -18%;
+  width: 370px;
+}
+
+.about {
+  width: 80%;
+  margin: 10px auto;
+}
+.about hr {
+  width: 100px;
+  background: hsl(256deg, 26%, 20%);
+  margin: 20px;
+  height: 3px;
+  outline: none;
+}
+.about h1 {
+  font-weight: 600;
+  color: hsl(256deg, 26%, 20%);
+  font-size: 4em;
+}
+.about .items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.about .items .item {
+  max-width: 270px;
+  padding: 12px 10px;
+  text-align: left;
+  color: hsl(256deg, 26%, 20%);
+}
+.about .items .item h3 {
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.work {
+  width: 80%;
+  background: hsl(256deg, 26%, 20%);
+  margin: 2em auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4em 2em;
+}
+.work h1 {
+  font-size: 2em;
+  text-align: left;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 98%);
+}
+.work a {
+  background: transparent;
+  padding: 5px 20px;
+  border: 2px solid hsl(0deg, 0%, 98%);
+  transition: all 0.5s;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 98%);
+  text-decoration: none;
+}
+.work a:hover {
+  background: hsl(0deg, 0%, 98%);
+  color: hsl(256deg, 26%, 20%);
+}
+
+footer {
+  background: hsl(0deg, 0%, 98%);
+  padding: 2em 0;
+}
+footer .content {
+  width: 80%;
+  margin: auto;
+}
+footer .content .link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 0;
+  margin-bottom: 1em;
+  border-bottom: 1px solid hsl(273deg, 4%, 51%);
+}
+footer .content .link .links img {
+  margin-right: 0.5em;
+  color: hsl(256deg, 26%, 20%);
+  cursor: pointer;
+}
+footer .blogs {
+  display: flex;
+  justify-content: space-between;
+}
+footer .blogs .blog {
+  color: hsl(256deg, 26%, 20%);
+}
+footer .blogs .blog .head {
+  color: hsl(273deg, 4%, 51%);
+  margin-bottom: 2em;
+}
+footer .blogs .blog p {
+  padding: 5px 0;
+}
+footer .blogs .blog a {
+  color: hsl(256deg, 26%, 20%);
+  text-decoration: none;
+  transition: all 0.5s;
+}
+footer .blogs .blog a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 835px) {
+  main header h1 {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 641px) {
+  .openNav {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .home {
+    margin-bottom: 5em;
+  }
+  .home .nav .openNav {
+    display: flex;
+  }
+  .home .nav .openNav.add {
+    display: none;
+  }
+  .home .nav .closeNav.close {
+    display: block;
+  }
+  .home .nav nav {
+    position: absolute;
+    background: hsl(216deg, 30%, 68%);
+    height: 100vh;
+    width: 100%;
+    top: -100vh;
+    left: 0;
+    text-align: center;
+    z-index: 1;
+    transition: all 0.5s ease;
+    padding-top: 20px;
+  }
+  .home .nav nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home .nav nav ul li {
+    margin-top: 10px;
+  }
+  .home .nav nav.active {
+    top: 7%;
+  }
+  .home main {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding-top: 0;
+  }
+  .home main header {
+    text-align: center;
+    width: 340px;
+    margin: 20px auto;
+  }
+  .home main header hr {
+    display: none;
+  }
+  .home main header h1 {
+    font-size: 2.9em;
+  }
+  .home main img {
+    margin-bottom: 0;
+  }
+  .about {
+    text-align: center;
+    width: 100%;
+  }
+  .about hr {
+    margin-left: 40%;
+  }
+  .about h1 {
+    font-size: 2.9em;
+  }
+  .about .items {
+    width: 100%;
+    flex-direction: column;
+  }
+  .about .items .item {
+    text-align: center;
+    margin: auto;
+  }
+  .work {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .work h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  footer .content {
+    text-align: center;
+    width: 100%;
+  }
+  footer .content .link {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .content .link .links {
+    margin-top: 2em;
+  }
+  footer .content .blogs {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .content .blogs .blog {
+    margin-top: 1em;
+  }
+}/*# sourceMappingURL=style.css.map */
